@@ -1,0 +1,15 @@
+// This patch will allow battle animations to use:
+//   - two palettes instead of one,
+//   - uncompressed palettes,
+//   - uncompressed frameData and
+//   - uncompressed OAMData.
+//
+// This patch will break the ballista palette for animation 0x9F, archer with ballista.
+// However, you can create individual animentries for each ballista's palette,
+// using uncompressed palettes. Status effects and other palette-colour changes
+// will apply to both the archer and the ballista's palettes, however.
+
+#include "Extensions/Hack Installation.txt"
+#include "EAstdlib.event"
+
+#include "ASM/ASM.event"

@@ -1,0 +1,14 @@
+NAME=extendBanimJP
+NAME.en=extendBanim
+NAME.zh=extendBanimZH
+
+TYPE=EA
+TAG=#ENGINE #BATTLE #ANIMATION #BATTLEANIMATION
+AUTHOR= AAA Another Animation Assembler by Huichelaar https://feuniverse.us/t/huichelaars-assembly-adventures/8229#p-71930-another-animation-assembler-5
+
+INFO=extendBanimInfoJP
+INFO.en=Enables importing battle animations that are assembled by AAA, Another Animation Assembler. These banims can have additional properties set such as 30-colour palettes or uncompressed data. Additional properties are stored in bytes 8 through 11 of banim name.
+INFO.zh=extendBanimInfoZH
+
+EA=Installer.event
+PATCHED_IF:0x54DE2=0x64 0x48 0x17 0x21 0x02 0x22 0x1C 0xF0 0x3E 0xFB
