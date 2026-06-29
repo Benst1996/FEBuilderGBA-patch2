@@ -1,14 +1,14 @@
-NAME=extendBanimJP
+NAME=extendBanim
 NAME.en=extendBanim
-NAME.zh=extendBanimZH
+NAME.zh=extendBanim
 
 TYPE=EA
 TAG=#ENGINE #BATTLE #ANIMATION #BATTLEANIMATION
 AUTHOR= AAA Another Animation Assembler by Huichelaar https://feuniverse.us/t/huichelaars-assembly-adventures/8229#p-71930-another-animation-assembler-5
 
-INFO=extendBanimInfoJP
-INFO.en=Enables importing battle animations that are assembled by AAA, Another Animation Assembler. These banims can have additional properties set such as 30-colour palettes or uncompressed data. Additional properties are stored in bytes 8 through 11 of banim name.
-INFO.zh=extendBanimInfoZH
+INFO=!!!! NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!\r\nこのパッチを適用する前に、すべての戦闘アニメーション名が8文字以内であることを確認してください。そうしないと、動作しなくなる可能性があります。\r\n\r\n「AAA (Another Animation Assembler)」で作成された戦闘アニメーションをインポートできるようになります。「設定」→「オプション」で AAA.exe へのパスを指定する必要があります。戦闘アニメーションのメニューに「追加プロパティ付きで戦闘アニメーションをインポート」という新しいボタンが追加されます。30色パレットや非圧縮データなどの追加プロパティが設定された戦闘アニメーションをインポートする際は、このボタンを使用してください。\r\n
+INFO.en=!!!! NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!\r\nMake sure all Battle Animation names do NOT have more than 8 characters before applying this patch or they will break.\r\n\r\nEnables importing Battle Animations that are assembled by AAA, Another Animation Assembler. You need to set a path to AAA.exe in Settings -> Options. A new button "Import Battle Animation with additional properties" will appear in the Battle Animations menu. Use this to import Battle Animations that have additional properties set such as 30-colour palettes or uncompressed data.\r\n
+INFO.zh=!!!! NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!\r\n在应用此补丁之前，请确保所有战斗动画的名称长度不超过 8 个字符，否则会导致动画失效。\r\n\r\n此功能支持导入由 AAA（Another Animation Assembler）制作的战斗动画。您需要在“设置 -> 选项”（Settings -> Options）中指定 AAA.exe 的路径。战斗动画菜单中将出现一个新按钮：“导入带有附加属性的战斗动画”（Import Battle Animation with additional properties）。请使用此功能导入包含附加属性（如 30 色调色板或未压缩数据）的战斗动画。\r\n
 
 EA=Installer.event
 PATCHED_IF:0x54DE2=0x64 0x48 0x17 0x21 0x02 0x22 0x1C 0xF0 0x3E 0xFB
